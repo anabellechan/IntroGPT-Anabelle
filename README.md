@@ -109,7 +109,7 @@ Once the answer is generated, you can then ask another question without re-runni
 Type `exit` to finish the script.
 
 ```shell
-python run_localGPT.py --use_history
+python run_resumeGPT.py --use_history
 ```
 
 # Run the Graphical User Interface
@@ -119,7 +119,7 @@ The default models used are:
    MODEL_BASENAME = "llama-2-7b-chat.Q4_K_M.gguf"
    ```
 Navigate to the `/resumeGPT` directory.
-Run the following command `python run_localGPT_API.py`. The API should being to run.
+Run the following command `python run_resumeGPT_API.py`. The API should being to run.
 
 Wait until everything has loaded in. You should see something like `INFO:werkzeug:Press CTRL+C to quit`.
 
@@ -177,18 +177,18 @@ Follow this [page](https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-
          pip cache purge
          pip install torch -f https://download.pytorch.org/whl/torch_stable.html
       ```
-    If errors in building llama-cpp-python==0.1.83
-        download cmake tools in visual studio 2022
-        then download llama-cpp-python==0.1.83
-        pip install --force-reinstall charset-normalizer==3.1.0
+    If errors in building llama-cpp-python==0.1.83,  
+        download cmake tools in visual studio 2022  
+        then download llama-cpp-python==0.1.83  
+        pip install --force-reinstall charset-normalizer==3.1.0  
 
-- [ERROR: pip's dependency resolver does not currently take into account all the packages that are installed](https://stackoverflow.com/questions/72672196/error-pips-dependency-resolver-does-not-currently-take-into-account-all-the-pa/76604141#76604141)
+  ERROR: pip's dependency resolver does not currently take into account all the packages that are installed
   ```shell
      pip install h5py
      pip install typing-extensions
      pip install wheel
   ```
-- [Failed to import transformers](https://github.com/huggingface/transformers/issues/11262)
+- Failed to import transformers
   - Try re-install
     ```shell
        conda uninstall tokenizers, transformers
