@@ -119,7 +119,7 @@ The default models used are:
    MODEL_BASENAME = "llama-2-7b-chat.Q4_K_M.gguf"
    ```
 Navigate to the `/resumeGPT` directory.
-Run the following command `python run_resumeGPT_API.py`. The API should being to run.
+Run the following command `python run_resumeGPT_API.py`. Wait for the API to run.
 
 Wait until everything has loaded in. You should see something like `INFO:werkzeug:Press CTRL+C to quit`.
 
