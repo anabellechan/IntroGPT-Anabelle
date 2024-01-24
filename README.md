@@ -5,7 +5,7 @@ Please refer to the powerpoint slides under ResumeGPT/Powerpoint Slides, and for
 - `ingest.py` uses `LangChain` tools to parse the document and create embeddings locally using `InstructorEmbeddings`. It then stores the result in a local vector database using `Chroma` vector store.
 - `run_resumeGPT.py` uses a local LLM to understand questions and create answers. The context for the answers is extracted from the local vector store using a similarity search to locate the right piece of context from the docs.
 
-# Environment Setup 🌍
+# Environment Setup
 
 1. 📥 Clone the repo using git:
 
@@ -13,7 +13,7 @@ Please refer to the powerpoint slides under ResumeGPT/Powerpoint Slides, and for
 git clone https://github.com/anabellechan/ResumeGPT-Anabelle.git
 ```
 
-2. 🐍 Install [conda](https://www.anaconda.com/download) for virtual environment management. Create and activate a new virtual environment.
+2. Conda Install for virtual environment management. Create and activate a new virtual environment.
 
 On VSC, command palette -> select interpreter -> select anaconda3 -> e.g Python 3.10.0
 ```shell
@@ -177,6 +177,10 @@ Follow this [page](https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-
          pip cache purge
          pip install torch -f https://download.pytorch.org/whl/torch_stable.html
       ```
+    If errors in building llama-cpp-python==0.1.83
+        download cmake tools in visual studio 2022
+        then download llama-cpp-python==0.1.83
+        pip install --force-reinstall charset-normalizer==3.1.0
 
 - [ERROR: pip's dependency resolver does not currently take into account all the packages that are installed](https://stackoverflow.com/questions/72672196/error-pips-dependency-resolver-does-not-currently-take-into-account-all-the-pa/76604141#76604141)
   ```shell
