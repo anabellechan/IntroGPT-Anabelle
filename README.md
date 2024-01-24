@@ -1,7 +1,7 @@
 This ResumeGPT is an end-to-end prototype of a Generative AI app that introduces yourself to users. Users can ask the app questions and receive pertinent answers. It is built on top of the open-source initiative, localGPT from PromptEngineer.
 
-## For achitectural diagram of the app, please refer to the powerpoint slides under ResumeGPT/Powerpoint Slides. For the video demonstration, it is under ResumeGPT/Video_Demo
-
+### For achitectural diagram of the app, please refer to the powerpoint slides under ResumeGPT/Powerpoint Slides. For the video demonstration, it is under ResumeGPT/Video_Demo
+  
 - `ingest.py` uses `LangChain` tools to parse the document and create embeddings locally using `InstructorEmbeddings`. It then stores the result in a local vector database using `Chroma` vector store.
 - `run_resumeGPT.py` uses a local LLM to understand questions and create answers. The context for the answers is extracted from the local vector store using a similarity search to locate the right piece of context from the docs.
 
