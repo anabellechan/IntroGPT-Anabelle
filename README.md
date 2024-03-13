@@ -1,4 +1,5 @@
-This ResumeGPT is an end-to-end prototype of a Generative AI app that introduces yourself to users. Users can ask the app questions and receive pertinent answers. It is built on top of the open-source initiative, localGPT from PromptEngineer.
+IntroGPT that user can ask questions like "Introduct the person" about ingested resume data and the bot will give answers according to the context.
+This IntroGPT is an end-to-end prototype of a Generative AI app that introduces yourself to users. Users can ask the app questions and receive pertinent answers. It is built on top of the open-source initiative, localGPT from PromptEngineer.
 
 ### For the architectural diagram of the app and detailed explanation of design and insights , please refer to the powerpoint slides under ResumeGPT/Powerpoint Slides. For the video demonstration, it is under ResumeGPT/Video_Demo
   
